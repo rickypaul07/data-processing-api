@@ -86,8 +86,8 @@ This API allows users to upload CSV files, obtain data summaries, apply transfor
       -H "Content-Type: application/json" \
       -d '{
             "transformations": {
-                "normalize": ["column1", "column2"],
-                "fill_missing": {"column3": 0}
+                "normalize": ["col1", "col2"],
+                "fill_missing": {"col3": 0}
             }
           }'
     ```
@@ -109,7 +109,7 @@ This API allows users to upload CSV files, obtain data summaries, apply transfor
 - **Curl Command:**
 
     ```bash
-    curl -X GET "http://localhost:5000/visualize/<file_id>?chart_type=histogram&columns=column1&columns=column2" \
+    curl -X GET "http://localhost:5000/visualize/<file_id>?chart_type=histogram&columns=col1&columns=col2" \
       --output output_image.png
     ```
 
